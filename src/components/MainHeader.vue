@@ -1,6 +1,9 @@
 <template>
   <div class="header">
-    <button v-if="user" @click="logout">ろぐあうと</button>
+
+    <button class="btn btn-outline-warning" v-if="user" @click="logout">
+      ろぐあうと
+    </button>
   </div>
 </template>
 
@@ -27,7 +30,7 @@ export default {
 
     return {
       logout,
-      user
+      user,
     };
   },
 };

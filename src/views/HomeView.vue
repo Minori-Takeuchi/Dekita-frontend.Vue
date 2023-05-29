@@ -3,19 +3,22 @@
     <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <p>{{ user?.displayName }}</p>
+    <BSDropdown/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+
 import HelloWorld from "@/components/HelloWorld.vue";
 import { useStore } from "vuex";
 import { computed } from "vue";
+import BSDropdown from '@/components/BSDropdown.vue';
 
 export default {
   name: "HomeView",
   components: {
     HelloWorld,
+    BSDropdown,
   },
   setup() {
     const store = useStore();
